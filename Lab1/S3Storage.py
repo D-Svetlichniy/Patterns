@@ -10,11 +10,9 @@ class S3Storage(IStorage):         #Клас для Amazon S3
         return cls._instance
 
     def upload_file(self, file_name: str, data: bytes):
-        # Для спрощення приклад не включає інтеграцію з S3 API
         print(f"File {file_name} uploaded to Amazon S3.")
 
     def download_file(self, file_name: str) -> bytes:
-        # Симуляція завантаження з S3
         print(f"File {file_name} downloaded from Amazon S3.")
         return b"fake data from S3"
 
