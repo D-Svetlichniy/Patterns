@@ -21,8 +21,3 @@ class StorageManager:        #Менеджер сховищ
             else:
                 raise ValueError(f"Unsupported storage type: {storage_type}")
         return self._storages[user_id]
-
-# Демонстрація
-manager = StorageManager()
-user1_storage = manager.get_storage("user1", "local")
-user2_storage = manager.get_storage("user2", "s3")
